@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <link rel="stylesheet" href="liste.css" />
+        <title>Formulaire</title>
+    </head>
+    <body>
+        <header>
+            <h1>Formulaire</h1>
+        </header>
+        <main>
+            <section class="content">
+                <button onclick="history.back()">Retour</button>
+                <form id="form" action="liste.html" method="post">
+                    <div class="columns">
+                        <div class="column">
+                            <label for="imageUrl">Image (lien)</label>
+                            <input type="url" name="imageUrl" />
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column">
+                            <label class="required" for="name">Nom</label>
+                            <input type="text" name="name" minlength="3" required />
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column">
+                            <label class="required" for="category">Catégorie</label>
+                            <select name="category" required>
+                                <option value="bought">Acheté</option>
+                                <option value="selected">Sélectionné</option>
+                                <option value="urgent">Urgent</option>
+                                <option value="normal">Normale</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column">
+                            <label for="desc">Description</label>
+                            <textarea name="desc" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column">
+                            <label class="required" for="url">Lien vers page d'achat</label>
+                            <input type="url" name="url" required />
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column">
+                            <input type="submit" value="Valider" />
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

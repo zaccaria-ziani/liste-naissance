@@ -1,0 +1,119 @@
+
+html {
+    font-family: "Noto Sans";
+    font-size: 112.5%;
+    background: rgb(46, 136, 196);
+    color: black;
+}
+body {
+    margin: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+header {
+    color: black;
+    background-image:url("backgroundheader.jpg");
+    text-align: center;
+    background-size: 100%;
+    background-position-x: center ;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    padding: 1.5em;
+    margin-bottom: 1em;
+    border-radius:0px 0px 10px 10px;
+   
+  
+}
+
+p {
+    margin: 0.5em 0;
+}
+
+
+
+.content {
+    padding: 1em;
+    margin: 1.5em 12.5%;
+    background: white;
+    font-family: "Noto Sans";
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.33);
+    border:5px solid white;
+    border-radius: 7%;
+    -webkit-box-shadow: 35px -16px 5px 0px rgba(144,88,191,1);
+    box-shadow: 35px -16px 5px 0px rgba(144,88,191,1);
+    box-shadow: 35px -16px 5px 0px rgba(144,88,191,1);
+  
+}
+.content a {
+    text-decoration: none;
+    transition: color 0.25s ease-out;
+    color: #5a9cc7;
+}
+.content a:hover {
+    color: #478dc7;
+}
+.content ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 1em;
+}
+.content ul li::before {
+    content: "– ";
+}
+.columns {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.column {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5em;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+tr.bought {
+    background: rgba(136, 255, 0, 0.25);
+}
+tr.selected {
+    background: rgba(87, 191, 209, 0.25);
+}
+tr.urgent {
+    background: rgba(255, 251, 0, 0.25);
+}
+tr.normal {
+    background: rgba(156, 118, 173, 0.25);
+}
+figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+tr th,
+tr td {
+    padding: 1em 1em;
+}
+tr img {
+    width: 96px;
+    height: auto;
+}
+
+#form select, #form input[type="text"], #form input[type="password"], #form input[type="email"], #form input[type="tel"], #form input[type="datetime-local"], #form textarea, #form input[type="submit"] {
+    padding: 0.25em;
+    font-size: 0.825em;
+    font-family: "Noto Sans";
+}
+label.required:after {
+    content: " *";
+    color: red;
+}
